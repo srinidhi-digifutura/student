@@ -8,7 +8,22 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+     <%= link_to "Student Learning Portal", root_path, class: "navbar-brand" %>
+    </div>
+    <div class="navbar-right navbar-link">
+    	<%= link_to "Learn HTML Now",'#', class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+	<%= yield %>
+
+</div>
 
 </body>
 </html>
